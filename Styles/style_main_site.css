@@ -5072,7 +5072,7 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #495057;
+    border: 1px solid #0d82f8;
     border-radius: 0.2rem;
   }
   
@@ -11040,11 +11040,11 @@
   }
   
   .testmonial-card .testmonial-title {
-    font-size: 1.85rem;
+    font-size: 4rem;
   }
   
   .testmonial-card .testmonial-subtitle {
-    font-size: 0.8rem;
+    font-size: 2rem;
     letter-spacing: 1px;
     opacity: 0.8;
   }
@@ -11166,7 +11166,7 @@
   }
   
   .navbar-brand .brand-img {
-    width: 110px;
+    width: 150px;
     display: inline-block;
     margin: auto;
     opacity: 1;
@@ -11208,6 +11208,7 @@
   }
   
   .affix .navbar-brand .brand-txt {
+    color: #fff;
     opacity: 1;
     visibility: visible;
     bottom: 50%;

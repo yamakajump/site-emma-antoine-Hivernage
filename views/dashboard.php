@@ -92,9 +92,9 @@ if (isset($_SESSION['user'])) {
         <!-- Content Start -->
         <div class="container-fluid pt-4 px-4">
             <div class="row g-4">
-                <div class="col-sm-12 col-xl-6">  <!-- Hangard non surveillé -->
+                <div class="col-sm-12 col-xl-6">  
                     <div class="bg-secondary rounded h-100 p-4">  
-                        <h6 class="mb-4">Hangard non surveillé</h6>
+                        <h6 class="mb-4">Hangar caravane</h6>
                         <div class="scroll-wrapper text-center">
                             <button id="scrollUpBtn1" class="btn btn-primary" onclick="scrollContentHangard1(1)">↑</button>
 
@@ -104,9 +104,9 @@ if (isset($_SESSION['user'])) {
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-xl-6"> <!--Hangard surveillé -->
+                <div class="col-sm-12 col-xl-6">
                     <div class="bg-secondary rounded h-100 p-4">
-                        <h6 class="mb-4">Hangard surveillé</h6>
+                        <h6 class="mb-4">Hangar camping-car</h6>
                         <div class="scroll-wrapper text-center">
                             <button id="scrollUpBtn2" class="btn btn-primary" onclick="scrollContentHangard2(1)">↑</button>
 
