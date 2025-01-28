@@ -5010,11 +5010,11 @@
   }
   
   .navbar-dark .navbar-brand {
-    color: #062638;
+    color: #360638;
   }
   
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #062638;
+    color: #138420;
   }
   
   .navbar-dark .navbar-nav .nav-link {
@@ -5033,7 +5033,7 @@
   .navbar-dark .navbar-nav .active > .nav-link,
   .navbar-dark .navbar-nav .nav-link.show,
   .navbar-dark .navbar-nav .nav-link.active {
-    color: #062638;
+    color: #3677b5; /*COULEUR ONGLETS NAVBARRE (j'ai mis 10min à trouver je précise pour la prochaine fois :D )*/
   }
   
   .navbar-dark .navbar-toggler {
@@ -11041,10 +11041,21 @@
   
   .testmonial-card .testmonial-title {
     font-size: 4rem;
+    color: #0d1c4d;
+    display: inline-block;       /* Nécessaire pour que le background s'ajuste au texte */
+    background-color: white;     /* Couleur de fond blanche */
+    padding: 10px 20px;          /* Ajoute de l'espace autour du texte (padding) */
+    border-radius: 15px;         /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .testmonial-card .testmonial-subtitle {
-    font-size: 2rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+  .testmonial-little-subtitle {
+    font-size: 0.7rem;
     letter-spacing: 1px;
     opacity: 0.8;
   }
@@ -11136,7 +11147,7 @@
     .custom-navbar {
       min-height: auto !important;
       padding: 1rem;
-      background-color: #1F4365;
+      background-color: rgba(52, 58, 64, 0);
     }
     .custom-navbar .navbar-brand {
       display: none !important;
@@ -11194,7 +11205,7 @@
   
   .affix {
     min-height: 80px;
-    background: #1F4365;
+    background: #162f47;
     border-bottom: 1px solid #495057;
   }
   
@@ -11249,7 +11260,7 @@
     font-size: 2.4rem;
     font-weight: bold;
     opacity: .8;
-    color: #1F4365;
+    color: #162f47;
   }
   
   .header-mini {
@@ -11400,4 +11411,36 @@
     visibility: visible;
     opacity: 1;
   }
+
+  .image-container {
+    display: flex;           /* Active Flexbox pour placer les éléments côte à côte */
+    justify-content: center; /* Centrer les images horizontalement */
+    gap: 50px;               /* Ajouter un espace entre les images (optionnel) */
+}
+
+.image-container img {
+    max-width: 75%;         /* Assure que les images s'ajustent bien au conteneur */
+    width: 25%;              /* Ajustez la largeur (50% moins un peu d'espace pour le gap) */
+    height: auto;            /* Conserve le ratio d'aspect des images */
+    border-radius: 10px;     /* Coins arrondis (optionnel) */
+}
+.custom-link {
+  color: white;              /* Couleur blanche */
+  text-decoration: underline; /* Lien souligné */
+  font-weight: bold;         /* Gras (optionnel, pour plus de lisibilité) */
+}
+
+.custom-link:hover {
+  color: #0d1c4d;              /* Couleur grisée au survol (optionnel) */
+  text-decoration: underline; /* Conserver le soulignement au survol */
+}
+
+.footer-space {
+  height: 20px; /* Ajuste la taille selon l'espace voulu */
+  background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
+}
   
+.div-space {
+  height: 50px; /* Ajuste la taille selon l'espace voulu */
+  background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
+}
