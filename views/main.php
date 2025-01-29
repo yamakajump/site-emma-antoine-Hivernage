@@ -104,8 +104,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
                 <div class="row justify-content-center">
                     <div class="col-sm-8 py-5 my-5">
                         <h2 class="mb-4">À propos</h2>
-                        <p>Nous sommes Emma et Antoine et nous vous proposons de mettre en hivernage votre camping/caravane/bateaux/remorques/voitures dans nos hangars.<br>Nous vous proposons des <b>hangars fermé avec vidéos surveillance.</b></p>
-                        <p>Vous pourez retrouver les tarifs dans <b>l'onglet tarifs</b> du site internet.</p>
+                        <p>Nous sommes Emma et Antoine et nous vous proposons de mettre en hivernage votre camping-car, caravane, bateau, remorque ou voiture dans nos hangars.<br>Nous vous proposons des <b>hangars fermés avec vidéosurveillance.</b></p>
+                        <p>Vous pourrez retrouver les tarifs dans <b> <a class="nav-link-bis" href="#tarifs">l'onglet tarifs</a></b> du site internet.</p>
                     </div>
                 </div>
             </div>
