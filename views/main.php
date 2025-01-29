@@ -59,8 +59,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <header id="home" class="header">
     <div class="overlay text-white text-center">
         <img src="Images/logo.png" class="brand-img mb-3" alt="">
-        <h1 class="display-2 font-weight-bold my-3">Hivernage Crossac</h1>
-        <h2 class="display-4 mb-5">Emma &amp; Antoine</h2>
+        <h1 class="display-2 font-weight-bold my-3">AED Hivernage</h1>
+        <h1 class="display-3 font-weight-bold my-3">Crossac</h1>
         <!-- <a class="btn btn-lg btn-primary" href="#gallary">View Our gallary</a> -->
     </div>
 </header>
@@ -104,7 +104,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
         </div>
     </div>
 
-    <!-- TARIF Section  -->
+    <!-- TARIF Section  -->     
+    <div id="tarifs" class="div-space-tarif"></div>
     <div id="tarifs" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
         <h2 class="section-title">Tarifs</h2>
         <div class="image-container">
@@ -168,28 +169,27 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <!-- CONTACT Section -->
      
 <div id="contact" class="div-space"></div>
-<div class="container-fluid bg-dark text-light wow fadeIn">
-    <div class="row d-flex justify-content-center align-items-center" style="min-height: 60vh;">
-        <div class="col-md-4 px-0 d-flex justify-content-center align-items-center"> 
-            <!-- <img src="Images/logo.png" class="brand-img mb-3" alt=""> -->
-        </div>
-        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
-            <h3>NOUS TROUVER</h3>
-            <div class="text-muted">
-                <p><span class="ti-location-pin pr-3"></span>Crossac</p>
-                <p><span class="ti-support pr-3"></span> 06 95 15 42 42</p>
-                <p><span class="ti-email pr-3"></span>hivernage.crossac@gmail.com</p>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-text">
+            <h3 class="footer-title">NOUS TROUVER</h3>
+            <div class="contact-info">
+                <p><span class="icon">&#x1F4CD;</span><a href="https://maps.app.goo.gl/btdjFF3yzk5dA1QY9" target="_blank">Crossac</a></p>
+                <p><span class="icon">&#x260E;</span> 06 95 15 42 42</p>
+                <p><span class="icon">&#x2709;</span><a href="mailto:hivernage.crossac@gmail.com">hivernage.crossac@gmail.com</a></p>
             </div>
-            
-            <h9>A 12 minutes de Pont-château</h9>
-            <h9>A 18 minutes de Savenay</h9>
-            <h9>A 20 minutes de saint-Nazaire</h9>
+            <div class="location-info">
+                <p>-------------------------------------------</p>
+                <p><span class="icon">&#128337;</span>  A <b>12 minutes </b>de Pont-Château</p>
+                <p><span class="icon">&#128337;</span>  A <b>18 minutes </b>de Savenay</p>
+                <p><span class="icon">&#128337;</span>  A <b>20 minutes </b>de Saint-Nazaire</p>
+            </div>
         </div>
-        <div class="col-md-4 px-0 d-flex justify-content-center align-items-center">
-            <div id="map" style="width: 80%; height: 80%; min-height: 400px;"></div>
-        </div>
+        <div id="map"></div>
     </div>
 </div>
+
+
 <div class="footer-space"></div>
 
     <!-- end of page footer -->
@@ -204,11 +204,32 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <!-- wow.js -->
     <script src="vendors/wow/wow.js"></script>
     
-    <!-- google maps -->
+    <!-- google maps 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8EoB1gBCiNMOrXK3hNNkk-FEgn7kamVY&callback=initMap"></script>
-
+    -->
     <!-- js -->
     <script src="Script/main.js"></script>
+
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    // Initialiser la carte et définir les coordonnées du centre (+ zoom)
+    var map = L.map('map').setView([47.38564163099479, -2.1209033535736994], 13); // Coordonnées de la Tour Eiffel (exemple)
+
+    // Ajouter une couche de tuiles (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Ajouter un marqueur avec un popup
+    L.marker([47.38564163099479, -2.1209033535736994]).addTo(map)
+        .bindPopup("AED Hivernage.")
+        .openPopup();
+    </script>
 
 </body>
 </html>

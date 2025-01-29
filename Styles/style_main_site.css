@@ -73,7 +73,9 @@
   }
   
   body {
+    height: 100%;
     margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
@@ -173,7 +175,7 @@
   }
   
   a {
-    color: #062638;
+    color: white;
     text-decoration: none;
     background-color: transparent;
   }
@@ -426,13 +428,13 @@
   }
   
   .display-2 {
-    font-size: 5.5rem;
+    font-size: 4rem;
     font-weight: 300;
     line-height: 1.2;
   }
   
   .display-3 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
   }
@@ -5159,6 +5161,8 @@
   
   .card-img-overlay {
     position: absolute;
+    width: 100%; 
+    height: 100%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11185,8 +11189,12 @@
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
   }
-  
-  .navbar-brand .brand-txt {
+  .brand-img {
+    margin-top: 20vh;
+    height: 30vh;
+  }
+
+  .brand-txt {
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -11226,21 +11234,22 @@
   }
   
   .header {
-    height: 100vh;
-    max-height: 900px;
+    height: 100%;
+    min-height:750px;
     background: url(../Images/main.jpg) no-repeat center center fixed;
     background-size: cover;
-    min-height: 750px;
   }
   
   .header .overlay {
     height: 100%;
+    min-height:750px;
     background: rgba(33, 37, 41, 0.85);
     display: -webkit-flex;
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 1vh;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -11248,7 +11257,7 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -11425,7 +11434,7 @@
     border-radius: 10px;     /* Coins arrondis (optionnel) */
 }
 .custom-link {
-  color: white;              /* Couleur blanche */
+  color: #062638;              
   text-decoration: underline; /* Lien souligné */
   font-weight: bold;         /* Gras (optionnel, pour plus de lisibilité) */
 }
@@ -11444,3 +11453,60 @@
   height: 50px; /* Ajuste la taille selon l'espace voulu */
   background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
 }
+.div-space-tarif {
+  height: 20px; /* Ajuste la taille selon l'espace voulu */
+  background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
+}
+.footer {
+  background-color: #1F4365;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.footer-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 5px 0;
+}
+
+.contact-info .icon {
+  margin-right: 10px;
+}
+
+.location-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#map {
+  flex: 1;
+  height: 300px;
+  background: lightgray;
+  margin-left: 40px;
+}
+

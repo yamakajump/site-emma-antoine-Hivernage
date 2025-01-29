@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 function initMap() {
     // Nouvelles coordonnées pour le marqueur
-    var newCoordinates = {lat: 47.4111944, lng: -2.1707156};
+    /*var newCoordinates = {lat: 47.4111944, lng: -2.1707156};
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
@@ -29,7 +29,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: newCoordinates,
       map: map
-    });
+    });*/
 }
 
 (function ($) {
