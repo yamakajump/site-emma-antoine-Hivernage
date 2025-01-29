@@ -643,7 +643,6 @@
     position: relative;
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
   }
   
   .col {
@@ -11301,10 +11300,10 @@
     max-width: 1440px;
   }
   
-  .has-img-bg {
+  /*.has-img-bg {
     background: url(../Images/about-section.jpg) no-repeat center center;
     background-size: cover;
-  }
+  }*/
   
   .has-bg-overlay {
     position: relative;
