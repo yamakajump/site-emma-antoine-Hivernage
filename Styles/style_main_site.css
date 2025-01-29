@@ -62,7 +62,7 @@
   }
   
   html {
-    font-family: sans-serif;
+    font-family: "League Spartan", sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -76,7 +76,7 @@
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "League Spartan", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -103,6 +103,7 @@
   p {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: "League Spartan", sans-serif;;
   }
   
   abbr[title],
@@ -387,7 +388,7 @@
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
-    font-family: "Oswald", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 500;
     line-height: 1.2;
   }
@@ -11043,7 +11044,7 @@
   }
   
   .testmonial-card .testmonial-title {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #0d1c4d;
     display: inline-block;       /* Nécessaire pour que le background s'ajuste au texte */
     background-color: white;     /* Couleur de fond blanche */
@@ -11058,7 +11059,7 @@
     opacity: 0.8;
   }
   .testmonial-little-subtitle {
-    font-size: 0.7rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     opacity: 0.8;
   }
@@ -11207,7 +11208,7 @@
     visibility: hidden;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
-    font-family: "Oswald", sans-serif;
+    font-family: "League Spartan", sans-serif;
   }
   
   .affix {
@@ -11436,6 +11437,7 @@
   color: #062638;              
   text-decoration: underline; /* Lien souligné */
   font-weight: bold;         /* Gras (optionnel, pour plus de lisibilité) */
+  font-family: "League Spartan", sans-serif;;
 }
 
 .custom-link:hover {

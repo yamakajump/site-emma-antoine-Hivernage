@@ -22,6 +22,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
 
     <link rel="stylesheet" href="vendors/animate/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap + main styles -->
 	<link rel="stylesheet" href="Styles/style_main_site.css">
@@ -210,7 +211,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
             </div>
             <div class="location-info">
                 <p>-------------------------------------------</p>
-                <p><span class="icon">&#128337;</span>  A <b>12 minutes </b>de Pont-Château</p>
+                <p><span class="icon">&#128337;</span>  A <b>12 minutes </b>de Pontchâteau</p>
                 <p><span class="icon">&#128337;</span>  A <b>18 minutes </b>de Savenay</p>
                 <p><span class="icon">&#128337;</span>  A <b>20 minutes </b>de Saint-Nazaire</p>
             </div>
@@ -248,7 +249,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     // Initialiser la carte et définir les coordonnées du centre (+ zoom)
-    var map = L.map('map').setView([47.38564163099479, -2.1209033535736994], 13); // Coordonnées de la Tour Eiffel (exemple)
+    var map = L.map('map').setView([47.3821263, -2.1311559], 11); // Coordonnées de la Tour Eiffel (exemple)
 
     // Ajouter une couche de tuiles (OpenStreetMap)
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -256,9 +257,18 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     }).addTo(map);
 
     // Ajouter un marqueur avec un popup
-    L.marker([47.38564163099479, -2.1209033535736994]).addTo(map)
-        .bindPopup("AED Hivernage.")
-        .openPopup();
+    /*L.marker([47.4132975, -2.1703916]).addTo(map)
+        .bindPopup("Crossac")
+        .openPopup();*/
+
+    // Création d'un cercle avec un rayon de 500 mètres autour de Crossac
+    L.circle([47.3821263, -2.1311559], {
+        color: 'blue', // Couleur de la bordure
+        fillColor: '#30a2d1', // Couleur du fond
+        fillOpacity: 0.3, // Opacité du fond
+        radius: 2500 // Rayon en mètres
+    }).addTo(map)
+    .bindPopup("Zone autour de Crossac");
     </script>
 
 </body>
