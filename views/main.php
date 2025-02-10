@@ -127,7 +127,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
                 <div class="testmonial-card">
                 <h6 class="testmonial-subtitle">Hangar 2</h6>
                 <h6 class="testmonial-little-subtitle">Camping-cars</h6>
-                <h6 class="testmonial-subtitle">Disponible à partir de l'été 2025</h6>
+                <h6 class="testmonial-middle-subtitle">Disponible à partir de l'été 2025</h6>
                 <a href="mailto:hivernage.crossac@gmail.com" class="custom-link">Je m'inscris sur la liste d'attente par mail</a>
                     <!--<h3 class="testmonial-title"><//?php echo $placeHangard2 ?></h3>-->
                 </div>

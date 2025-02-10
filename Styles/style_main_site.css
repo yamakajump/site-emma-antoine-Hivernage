@@ -11044,7 +11044,7 @@
   }
   
   .testmonial-card .testmonial-title {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #0d1c4d;
     display: inline-block;       /* Nécessaire pour que le background s'ajuste au texte */
     background-color: white;     /* Couleur de fond blanche */
@@ -11054,12 +11054,17 @@
   }
   
   .testmonial-card .testmonial-subtitle {
-    font-size: 1.2rem;
+    font-size: 2rem;
     letter-spacing: 1px;
-    opacity: 0.8;
+    opacity: 1;
   }
   .testmonial-little-subtitle {
     font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }  
+  .testmonial-middle-subtitle {
+    font-size: 1.4rem;
     letter-spacing: 1px;
     opacity: 0.8;
   }
@@ -11434,7 +11439,7 @@
     border-radius: 10px;     /* Coins arrondis (optionnel) */
 }
 .custom-link {
-  color: #062638;              
+  color: #fcba03;              
   text-decoration: underline; /* Lien souligné */
   font-weight: bold;         /* Gras (optionnel, pour plus de lisibilité) */
   font-family: "League Spartan", sans-serif;;
