@@ -62,7 +62,7 @@
   }
   
   html {
-    font-family: sans-serif;
+    font-family: "League Spartan", sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -73,8 +73,10 @@
   }
   
   body {
+    height: 100%;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "League Spartan", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -101,6 +103,7 @@
   p {
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: "League Spartan", sans-serif;;
   }
   
   abbr[title],
@@ -173,7 +176,7 @@
   }
   
   a {
-    color: #062638;
+    color: white;
     text-decoration: none;
     background-color: transparent;
   }
@@ -385,7 +388,7 @@
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
-    font-family: "Oswald", sans-serif;
+    font-family: "League Spartan", sans-serif;
     font-weight: 500;
     line-height: 1.2;
   }
@@ -426,13 +429,13 @@
   }
   
   .display-2 {
-    font-size: 5.5rem;
+    font-size: 4rem;
     font-weight: 300;
     line-height: 1.2;
   }
   
   .display-3 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 300;
     line-height: 1.2;
   }
@@ -641,7 +644,6 @@
     position: relative;
     width: 100%;
     padding-right: 15px;
-    padding-left: 15px;
   }
   
   .col {
@@ -5010,11 +5012,11 @@
   }
   
   .navbar-dark .navbar-brand {
-    color: #062638;
+    color: #360638;
   }
   
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #062638;
+    color: #138420;
   }
   
   .navbar-dark .navbar-nav .nav-link {
@@ -5033,7 +5035,7 @@
   .navbar-dark .navbar-nav .active > .nav-link,
   .navbar-dark .navbar-nav .nav-link.show,
   .navbar-dark .navbar-nav .nav-link.active {
-    color: #062638;
+    color: #3677b5; /*COULEUR ONGLETS NAVBARRE (j'ai mis 10min à trouver je précise pour la prochaine fois :D )*/
   }
   
   .navbar-dark .navbar-toggler {
@@ -5159,6 +5161,8 @@
   
   .card-img-overlay {
     position: absolute;
+    width: 100%; 
+    height: 100%;
     top: 0;
     right: 0;
     bottom: 0;
@@ -11040,11 +11044,27 @@
   }
   
   .testmonial-card .testmonial-title {
-    font-size: 4rem;
+    font-size: 2rem;
+    color: #0d1c4d;
+    display: inline-block;       /* Nécessaire pour que le background s'ajuste au texte */
+    background-color: white;     /* Couleur de fond blanche */
+    padding: 10px 20px;          /* Ajoute de l'espace autour du texte (padding) */
+    border-radius: 15px;         /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .testmonial-card .testmonial-subtitle {
     font-size: 2rem;
+    letter-spacing: 1px;
+    opacity: 1;
+  }
+  .testmonial-little-subtitle {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }  
+  .testmonial-middle-subtitle {
+    font-size: 1.4rem;
     letter-spacing: 1px;
     opacity: 0.8;
   }
@@ -11136,7 +11156,7 @@
     .custom-navbar {
       min-height: auto !important;
       padding: 1rem;
-      background-color: #1F4365;
+      background-color: rgba(52, 58, 64, 0);
     }
     .custom-navbar .navbar-brand {
       display: none !important;
@@ -11174,8 +11194,12 @@
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
   }
-  
-  .navbar-brand .brand-txt {
+  .brand-img {
+    margin-top: 20vh;
+    height: 30vh;
+  }
+
+  .brand-txt {
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -11189,12 +11213,12 @@
     visibility: hidden;
     -webkit-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
-    font-family: "Oswald", sans-serif;
+    font-family: "League Spartan", sans-serif;
   }
   
   .affix {
     min-height: 80px;
-    background: #1F4365;
+    background: #162f47;
     border-bottom: 1px solid #495057;
   }
   
@@ -11215,21 +11239,22 @@
   }
   
   .header {
-    height: 100vh;
-    max-height: 900px;
+    height: 100%;
+    min-height:750px;
     background: url(../Images/main.jpg) no-repeat center center fixed;
     background-size: cover;
-    min-height: 750px;
   }
   
   .header .overlay {
     height: 100%;
+    min-height:750px;
     background: rgba(33, 37, 41, 0.85);
     display: -webkit-flex;
     display: -ms-flex;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 1vh;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -11237,7 +11262,7 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
+            justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -11249,7 +11274,7 @@
     font-size: 2.4rem;
     font-weight: bold;
     opacity: .8;
-    color: #1F4365;
+    color: #162f47;
   }
   
   .header-mini {
@@ -11281,10 +11306,10 @@
     max-width: 1440px;
   }
   
-  .has-img-bg {
+  /*.has-img-bg {
     background: url(../Images/about-section.jpg) no-repeat center center;
     background-size: cover;
-  }
+  }*/
   
   .has-bg-overlay {
     position: relative;
@@ -11400,4 +11425,94 @@
     visibility: visible;
     opacity: 1;
   }
+
+  .image-container {
+    display: flex;           /* Active Flexbox pour placer les éléments côte à côte */
+    justify-content: center; /* Centrer les images horizontalement */
+    gap: 50px;               /* Ajouter un espace entre les images (optionnel) */
+}
+
+.image-container img {
+    max-width: 75%;         /* Assure que les images s'ajustent bien au conteneur */
+    width: 25%;              /* Ajustez la largeur (50% moins un peu d'espace pour le gap) */
+    height: auto;            /* Conserve le ratio d'aspect des images */
+    border-radius: 10px;     /* Coins arrondis (optionnel) */
+}
+.custom-link {
+  color: #fcba03;              
+  text-decoration: underline; /* Lien souligné */
+  font-weight: bold;         /* Gras (optionnel, pour plus de lisibilité) */
+  font-family: "League Spartan", sans-serif;;
+}
+
+.custom-link:hover {
+  color: #0d1c4d;              /* Couleur grisée au survol (optionnel) */
+  text-decoration: underline; /* Conserver le soulignement au survol */
+}
+
+.footer-space {
+  height: 20px; /* Ajuste la taille selon l'espace voulu */
+  background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
+}
   
+.div-space {
+  height: 50px; /* Ajuste la taille selon l'espace voulu */
+  background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
+}
+.div-space-tarif {
+  height: 20px; /* Ajuste la taille selon l'espace voulu */
+  background-color: transparent; /* Pas de fond spécifique si tu veux un espace transparent */
+}
+.footer {
+  background-color: #1F4365;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.footer-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  margin-right: 100px;
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 5px 0;
+}
+
+.contact-info .icon {
+  margin-right: 10px;
+}
+
+.location-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#map {
+  flex: 1;
+  height: 300px;
+  background: lightgray;
+  margin-left: 40px;
+}
+

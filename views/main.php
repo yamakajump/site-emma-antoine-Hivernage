@@ -22,6 +22,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
 
     <link rel="stylesheet" href="vendors/animate/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap + main styles -->
 	<link rel="stylesheet" href="Styles/style_main_site.css">
@@ -42,16 +43,16 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
                     <a class="nav-link" href="#about">À propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tarifs">Tarifs</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
                     <a class="nav-link" href="#testmonial">Disponibilités</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tarifs">Tarifs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
+            </ul>
+            <ul class="navbar-nav">
             </ul>
         </div>
     </nav>
@@ -59,8 +60,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <header id="home" class="header">
     <div class="overlay text-white text-center">
         <img src="Images/logo.png" class="brand-img mb-3" alt="">
-        <h1 class="display-2 font-weight-bold my-3">Hivernage Crossac</h1>
-        <h2 class="display-4 mb-5">Emma &amp; Antoine</h2>
+        <h1 class="display-2 font-weight-bold my-3">AED Hivernage</h1>
+        <h1 class="display-3 font-weight-bold my-3">Crossac</h1>
         <!-- <a class="btn btn-lg btn-primary" href="#gallary">View Our gallary</a> -->
     </div>
 </header>
@@ -68,121 +69,159 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <!--  About Section  -->
     <div id="about" class="container-fluid wow fadeIn" id="about"data-wow-duration="1.5s">
         <div class="row">
-            <div class="col-lg-6 has-img-bg"></div>
+            <div class="col-lg-6 has-img-bg">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="/Images/about-section1.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="/Images/about-section2.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="/Images/about-section3.jpg" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+
             <div class="col-lg-6">
                 <div class="row justify-content-center">
                     <div class="col-sm-8 py-5 my-5">
                         <h2 class="mb-4">À propos</h2>
-                        <p>Nous sommes Emma et Antoine et nous vous proposons de mettre en hivernage votre camping/caravane/bateaux/remorques/voitures dans nos hangars.<br>Nous vous proposons des <b>hangars fermé avec vidéos surveillance.</b></p>
-                        <p>Vous pourez retrouver les tarifs dans <b>l'onglet tarifs</b> du site internet.</p>
+                        <p>Nous sommes Emma et Antoine et nous vous proposons de mettre en hivernage votre camping-car, caravane, bateau, remorque ou voiture dans nos hangars.<br>Nous vous proposons des <b>hangars fermés avec vidéosurveillance.</b></p>
+                        <p>Vous pourrez retrouver les tarifs dans <b> <a class="nav-link-bis" href="#tarifs">l'onglet tarifs</a></b> du site internet.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- BLOG Section  -->
-    <div id="tarifs" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
-        <h2 class="section-title">Tarifs</h2>
-        <h3 class="py-5">Caravanes / bateaux / remorques / voitures</h3>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="close" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="Images/tarifs-1.jpg" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h4 class="pt20 pb20">moins de 6,5 mètres (flèche inclus)</h4>
-                                <p class="text-white" style="display: inline;">Mensuel : 50€</br>Annuel : 480€ </p>
-                                <p class="text-muted" style="display: inline;">(soit 40€/mois)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h3 class="py-5">Camping-car</h3>
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="close" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="row justify-content-center">
-                    <!-- <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="Images/tarifs-1.jpg" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a class="badge badge-primary">disponible en été 2025</a></h1>
-                                <h4 class="pt20 pb20">moins de 6 mètres </h4>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="Images/tarifs-2.jpg" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a class="badge badge-primary">disponible en été 2025</a></h1>
-                                <h4 class="pt20 pb20">entre 6 et 7 mètres</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="Images/tarifs-3.jpg" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a class="badge badge-primary">disponible en été 2025</a></h1>
-                                <h4 class="pt20 pb20">plus de 7 mètres</h4>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="col-md-4">
-                        <div class="card bg-transparent border my-3 my-md-0">
-                            <img src="Images/tarifs-2.png" class="rounded-0 card-img-top mg-responsive">
-                            <div class="card-body">
-                                <h1 class="text-center mb-4"><a class="badge badge-primary">disponible en été 2025</a></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- REVIEWS Section  -->
+    <!-- AVAILABILITY Section  -->
     <div id="testmonial" class="container-fluid wow fadeIn bg-dark text-light has-height-lg middle-items">
         <h2 class="section-title my-5 text-center">Places disponibles</h2>
         <div class="row mt-3 mb-5">
             <div class="col-md-6 my-3 my-md-0">
                 <div class="testmonial-card">
-                    <h3 class="testmonial-title"><?php echo $placeHangard1 ?></h3>
-                    <h6 class="testmonial-subtitle">Caravanes / bateaux / remorques / voitures</h6>
+                <h6 class="testmonial-subtitle">Hangar 1</h6>
+                <h6 class="testmonial-little-subtitle">Caravanes / bateaux / remorques / voitures</h6>
+                    <h3 class="testmonial-title"><?php echo $placeHangard1  . " places";?></h3>
                 </div>
             </div>
             <div class="col-md-6 my-3 my-md-0">
                 <div class="testmonial-card">
-                    <h3 class="testmonial-title"><?php echo $placeHangard2 ?></h3>
-                    <h6 class="testmonial-subtitle">Camping-cars</h6>
+                <h6 class="testmonial-subtitle">Hangar 2</h6>
+                <h6 class="testmonial-little-subtitle">Camping-cars</h6>
+                <h6 class="testmonial-middle-subtitle">Disponible à partir de l'été 2025</h6>
+                <a href="mailto:hivernage.crossac@gmail.com" class="custom-link">Je m'inscris sur la liste d'attente par mail</a>
+                    <!--<h3 class="testmonial-title"><//?php echo $placeHangard2 ?></h3>-->
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- TARIF Section  -->     
+    <div id="tarifs" class="div-space-tarif"></div>
+    <div id="tarifs" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
+        <h2 class="section-title">Tarifs</h2>
+        <div class="image-container">
+        <img id="clickableImageHangar1" src="Images/1.png" alt="Image à cliquer" style="cursor: pointer;">
+        <img id="clickableImageHangar2" src="Images/4.png" alt="Image à cliquer" style="cursor: pointer;">
+    </div>        
+    </div>
+
+    <script>
+        /*HANGAR 1*/
+    // Fonction qui change l'image au clic
+    document.getElementById("clickableImageHangar1").onclick = function() {
+        console.log("L'image a été cliquée !" + this.src.split('/').pop());
+        const currentImage = this.src.split('/').pop();
+        if(currentImage === "2.png"){
+        this.src = "Images/3.png"
+        }
+        else this.src = "Images/2.png"
+    };
+    // Fonction qui change l'image quand on passe dessus
+    document.getElementById("clickableImageHangar1").onmouseover = function() {
+        const currentImage = this.src.split('/').pop();
+        if(currentImage === "1.png"){
+        this.src = "Images/2.png"
+        }
+    };    
+    // Fonction qui change l'image quand on part d'elle
+    document.getElementById("clickableImageHangar1").onmouseout = function() {
+        const currentImage = this.src.split('/').pop();
+        if(currentImage === "2.png"){
+        this.src = "Images/1.png"
+        }
+    };
+        /*HANGAR 2*/
+    // Fonction qui change l'image au clic
+    document.getElementById("clickableImageHangar2").onclick = function() {
+        console.log("L'image a été cliquée !" + this.src.split('/').pop());
+        const currentImage = this.src.split('/').pop();
+        if(currentImage === "5.png"){
+        this.src = "Images/6.png"
+        }
+        else this.src = "Images/5.png"
+    };
+    // Fonction qui change l'image quand on passe dessus
+    document.getElementById("clickableImageHangar2").onmouseover = function() {
+        const currentImage = this.src.split('/').pop();
+        if(currentImage === "4.png"){
+        this.src = "Images/5.png"
+        }
+    };    
+    // Fonction qui change l'image quand on part d'elle
+    document.getElementById("clickableImageHangar2").onmouseout = function() {
+        const currentImage = this.src.split('/').pop();
+        if(currentImage === "5.png"){
+        this.src = "Images/4.png"
+        }
+    };
+    </script>
+
+
     <!-- CONTACT Section -->
-<div id="contact" class="container-fluid bg-dark text-light wow fadeIn">
-    <div class="row d-flex justify-content-center align-items-center" style="min-height: 60vh;">
-        <div class="col-md-4 px-0 d-flex justify-content-center align-items-center"> 
-            <!-- <img src="Images/logo.png" class="brand-img mb-3" alt=""> -->
-        </div>
-        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center text-center">
-            <h3>NOUS TROUVER</h3>
-            <div class="text-muted">
-                <p><span class="ti-location-pin pr-3"></span>Crossac</p>
-                <p><span class="ti-support pr-3"></span> 06 95 15 42 42</p>
-                <p><span class="ti-email pr-3"></span>hivernage.crossac@gmail.com</p>
+     
+<div id="contact" class="div-space"></div>
+<div class="footer">
+    <div class="footer-content">
+        <div class="footer-text">
+            <h3 class="footer-title">NOUS TROUVER</h3>
+            <div class="contact-info">
+                <p><span class="icon">&#x1F4CD;</span><a href="https://maps.app.goo.gl/btdjFF3yzk5dA1QY9" target="_blank">Crossac</a></p>
+                <p><span class="icon">&#x260E;</span> 06 95 15 42 42</p>
+                <p><span class="icon">&#x2709;</span><a href="mailto:hivernage.crossac@gmail.com">hivernage.crossac@gmail.com</a></p>
+            </div>
+            <div class="location-info">
+                <p>-------------------------------------------</p>
+                <p><span class="icon">&#128337;</span>  A <b>12 minutes </b>de Pontchâteau</p>
+                <p><span class="icon">&#128337;</span>  A <b>18 minutes </b>de Savenay</p>
+                <p><span class="icon">&#128337;</span>  A <b>20 minutes </b>de Saint-Nazaire</p>
             </div>
         </div>
-        <div class="col-md-4 px-0 d-flex justify-content-center align-items-center">
-            <div id="map" style="width: 80%; height: 80%; min-height: 400px;"></div>
-        </div>
+        <div id="map"></div>
     </div>
 </div>
+
+
+<div class="footer-space"></div>
 
     <!-- end of page footer -->
 
@@ -196,11 +235,41 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <!-- wow.js -->
     <script src="vendors/wow/wow.js"></script>
     
-    <!-- google maps -->
+    <!-- google maps 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8EoB1gBCiNMOrXK3hNNkk-FEgn7kamVY&callback=initMap"></script>
-
+    -->
     <!-- js -->
     <script src="Script/main.js"></script>
+
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    // Initialiser la carte et définir les coordonnées du centre (+ zoom)
+    var map = L.map('map').setView([47.3821263, -2.1311559], 11); // Coordonnées de la Tour Eiffel (exemple)
+
+    // Ajouter une couche de tuiles (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Ajouter un marqueur avec un popup
+    /*L.marker([47.4132975, -2.1703916]).addTo(map)
+        .bindPopup("Crossac")
+        .openPopup();*/
+
+    // Création d'un cercle avec un rayon de 500 mètres autour de Crossac
+    L.circle([47.3821263, -2.1311559], {
+        color: 'blue', // Couleur de la bordure
+        fillColor: '#30a2d1', // Couleur du fond
+        fillOpacity: 0.3, // Opacité du fond
+        radius: 2500 // Rayon en mètres
+    }).addTo(map)
+    .bindPopup("Zone autour de Crossac");
+    </script>
 
 </body>
 </html>

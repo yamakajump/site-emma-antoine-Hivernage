@@ -15,11 +15,26 @@ $(document).ready(function(){
             });
         } 
     });
+    $(".nav-link-bis").on('click', function(event) {
+
+        if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 700, function(){
+                window.location.hash = hash;
+            });
+        } 
+    });
 });
 
 function initMap() {
     // Nouvelles coordonnées pour le marqueur
-    var newCoordinates = {lat: 47.4111944, lng: -2.1707156};
+    /*var newCoordinates = {lat: 47.4111944, lng: -2.1707156};
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 11,
@@ -29,7 +44,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: newCoordinates,
       map: map
-    });
+    });*/
 }
 
 (function ($) {
