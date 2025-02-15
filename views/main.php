@@ -61,7 +61,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <header id="home" class="header">
     <div class="overlay text-white text-center">
         <img src="Images/logo.png" class="brand-img mb-3" alt="logo caravane hangar fermé">
-        <h1 class="display-2 font-weight-bold my-3">AED Hivernage de véhicules</h1>
+        <h1 class="display-2 font-weight-bold my-3">AED Hivernage</h1>
         <h1 class="display-3 font-weight-bold my-3">Crossac</h1>
         <!-- <a class="btn btn-lg btn-primary" href="#gallary">View Our gallary</a> -->
     </div>
