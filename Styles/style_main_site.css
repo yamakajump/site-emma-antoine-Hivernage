@@ -644,6 +644,7 @@
     position: relative;
     width: 100%;
     padding-right: 15px;
+    padding-left: 20px;
   }
   
   .col {
@@ -11197,6 +11198,7 @@
   .brand-img {
     margin-top: 20vh;
     height: 30vh;
+    max-width: 100%;
   }
 
   .brand-txt {
@@ -11429,15 +11431,31 @@
   .image-container {
     display: flex;           /* Active Flexbox pour placer les éléments côte à côte */
     justify-content: center; /* Centrer les images horizontalement */
-    gap: 50px;               /* Ajouter un espace entre les images (optionnel) */
+    gap: 5%;               /* Ajouter un espace entre les images (optionnel) */
 }
 
-.image-container img {
+
+@media (min-width: 1024px) { /* Pour les écrans larges (PC) */
+  .image-container img  {
     max-width: 75%;         /* Assure que les images s'ajustent bien au conteneur */
     width: 25%;              /* Ajustez la largeur (50% moins un peu d'espace pour le gap) */
     height: auto;            /* Conserve le ratio d'aspect des images */
     border-radius: 10px;     /* Coins arrondis (optionnel) */
+  }
 }
+
+@media (max-width: 768px) { /* Pour les écrans mobiles */
+  .image-container img  {
+    max-width: 45%;         /* Assure que les images s'ajustent bien au conteneur */
+    width: 45%;              /* Ajustez la largeur (50% moins un peu d'espace pour le gap) */
+    height: auto; 
+    max-height: 70vh;           /* Conserve le ratio d'aspect des images */
+    border-radius: 10px;     /* Coins arrondis (optionnel) */
+    object-fit: contain;
+  }
+}
+
+
 .custom-link {
   color: #fcba03;              
   text-decoration: underline; /* Lien souligné */

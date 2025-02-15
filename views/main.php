@@ -13,7 +13,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Hivernage Crossac pour vos camping/caravane dans nos hangars.">
     <meta name="author" content="yamakajump">
-    <title>Hivernage Crossac</title>
+    <title>Hivernage de véhicules à Crossac | Stockage sécurisé en Pays de la Loire</title>
+    <meta name="description" content="Hivernage sécurisé pour votre véhicule à Crossac Loire-Atlantique. Hangars fermés, vidéosurveillance et accès par badge. Réservez votre emplacement !">
    
     <!-- Favicon -->
     <link href="Images/icon.ico" rel="icon">
@@ -59,8 +60,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <!-- header -->
     <header id="home" class="header">
     <div class="overlay text-white text-center">
-        <img src="Images/logo.png" class="brand-img mb-3" alt="">
-        <h1 class="display-2 font-weight-bold my-3">AED Hivernage</h1>
+        <img src="Images/logo.png" class="brand-img mb-3" alt="logo caravane hangar fermé">
+        <h1 class="display-2 font-weight-bold my-3">AED Hivernage de véhicules</h1>
         <h1 class="display-3 font-weight-bold my-3">Crossac</h1>
         <!-- <a class="btn btn-lg btn-primary" href="#gallary">View Our gallary</a> -->
     </div>
@@ -78,13 +79,13 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img class="d-block w-100" src="/Images/about-section1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="/Images/about-section1.jpg" alt="bateau et caravane dans un hangar fermé avec vidéosurveillance et extincteur pour la protection incendie">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-100" src="/Images/about-section2.jpg" alt="Second slide">
+                        <img class="d-block w-100" src="/Images/about-section2.jpg" alt="Hangar d'hivernage fermé avec une porte d'accès à serrure connectée et badge">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-100" src="/Images/about-section3.jpg" alt="Third slide">
+                        <img class="d-block w-100" src="/Images/about-section3.jpg" alt="Hangar d'hivernage éclairé avec des places de disponibles pour louer un emplacement">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -120,7 +121,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
                 <div class="testmonial-card">
                 <h6 class="testmonial-subtitle">Hangar 1</h6>
                 <h6 class="testmonial-little-subtitle">Caravanes / bateaux / remorques / voitures</h6>
-                    <h3 class="testmonial-title"><?php echo $placeHangard1  . " places";?></h3>
+                    <h3 class="testmonial-title"><?php echo $placeHangard1  . " places disponibles";?></h3>
                 </div>
             </div>
             <div class="col-md-6 my-3 my-md-0">
@@ -140,8 +141,8 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
     <div id="tarifs" class="container-fluid bg-dark text-light py-5 text-center wow fadeIn">
         <h2 class="section-title">Tarifs</h2>
         <div class="image-container">
-        <img id="clickableImageHangar1" src="Images/1.png" alt="Image à cliquer" style="cursor: pointer;">
-        <img id="clickableImageHangar2" src="Images/4.png" alt="Image à cliquer" style="cursor: pointer;">
+        <img id="clickableImageHangar1" src="Images/1.png" alt="Tarifs pour véhicules de moins de 6 mètres de long" style="cursor: pointer;">
+        <img id="clickableImageHangar2" src="Images/4.png" alt="Tarifs pour véhicules de max 8 mètre de long et 3 mètre 50 de haut" style="cursor: pointer;">
     </div>        
     </div>
 
