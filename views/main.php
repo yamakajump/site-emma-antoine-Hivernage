@@ -206,7 +206,7 @@ $placeHangard2 = $placeHangard[0]->getPlaceHangard2();
         <div class="footer-text">
             <h3 class="footer-title">NOUS TROUVER</h3>
             <div class="contact-info">
-                <p><span class="icon">&#x1F4CD;</span><a href="https://maps.app.goo.gl/btdjFF3yzk5dA1QY9" target="_blank">Crossac</a></p>
+                <p><span class="icon">&#x1F4CD;</span><a href="https://maps.app.goo.gl/p6USmXSJz67HVV4n7" target="_blank">Crossac</a></p>
                 <p><span class="icon">&#x260E;</span> 06 95 15 42 42</p>
                 <p><span class="icon">&#x2709;</span><a href="mailto:hivernage.crossac@gmail.com">hivernage.crossac@gmail.com</a></p>
             </div>
